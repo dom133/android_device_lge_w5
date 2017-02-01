@@ -67,7 +67,27 @@ void vendor_load_properties()
     char devicename[PROP_VALUE_MAX];
 
     std::string serial = property_get("ro.boot.serialno");
-    if (serial.substr(0,6) == "LGD320") {
+	if(serial.substr(0,6) == "LGD280") {
+		
+        property_set("ro.product.device", "w55n");
+        property_set("ro.product.model", "LG-D280n");
+        property_set("ro.nfc.port", "I2C");
+        property_set("ro.build.description", "cm_w55n-userdebug 7.1 NDE63X cf84cd3c64 test-keys");
+        property_set("ro.build.fingerprint", "lge/cm_w55n/w55n:7.1/NDE63X/cf84cd3c64:userdebug/test-keys");
+        property_set("persist.radio.multisim.config", "");
+        property_set("persist.multisim.config", "");
+        property_set("telephony.lteOnCdmaDevice", "0");
+	} else if(serial.substr(0,6) == "LGD285") {
+		
+        property_set("ro.product.device", "w55n");
+        property_set("ro.product.model", "LG-D280n");
+        property_set("ro.nfc.port", "I2C");
+        property_set("ro.build.description", "cm_w55n-userdebug 7.1 NDE63X cf84cd3c64 test-keys");
+        property_set("ro.build.fingerprint", "lge/cm_w55n/w55n:7.1/NDE63X/cf84cd3c64:userdebug/test-keys");
+        property_set("persist.radio.multisim.config", "");
+        property_set("persist.multisim.config", "");
+        property_set("telephony.lteOnCdmaDevice", "0");
+    } else if (serial.substr(0,6) == "LGD320") {
         
         if (check_cmdline("model.name=LG-D320n") == 1) {
                 property_set("ro.product.device", "w5");

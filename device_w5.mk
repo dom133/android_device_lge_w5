@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     device/lge/w5/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
     device/lge/w5/prebuilt/usr/keylayout/Generic-D320.kl:system/usr/keylayout/Generic-D320.kl \
     device/lge/w5/prebuilt/usr/keylayout/Generic-D325.kl:system/usr/keylayout/Generic-D325.kl \
+	device/lge/w5/prebuilt/usr/keylayout/Generic-D280.kl:system/usr/keylayout/Generic-D280.kl \
     device/lge/w5/prebuilt/usr/keylayout/Generic-MS323.kl:system/usr/keylayout/Generic-MS323.kl
 
 # OTA
